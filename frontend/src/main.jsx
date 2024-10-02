@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import React from 'react';
 import { ChakraProvider } from '@chakra-ui/react'
+import { BrowserRouter } from 'react-router-dom'
 
 
 const rootElement = document.getElementById('root');
@@ -11,7 +12,9 @@ if (rootElement) {
     
     <StrictMode>
       <ChakraProvider>
-        <App />
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
       </ChakraProvider>
     </StrictMode>,
   );
