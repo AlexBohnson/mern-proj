@@ -1,3 +1,8 @@
+//These are our main functions that will be called when we hit the routes
+
+
+
+
 import Product from "../models/product.model.js";
 import mongoose from "mongoose";
 
