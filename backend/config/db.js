@@ -1,3 +1,6 @@
+//This is our connection to mongoose server. Configured with MonogoDB URI from .env file.
+
+
 import mongoose from "mongoose";
 
 

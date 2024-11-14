@@ -1,0 +1,7 @@
+Set up server
+    mongo db set up
+
+create models
+
+create api
+    routes controllers config

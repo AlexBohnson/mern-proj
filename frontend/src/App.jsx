@@ -1,25 +1,41 @@
-import { Box} from "@chakra-ui/react"
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-import CreatePage from "./pages/CreatePage";
-import HomePage from "./pages/HomePage";
-import NavBar from "./components/Navbar";
 
+import { Button } from "./components/ui/button"
+import React from "react"
+import {
+  MenuContent,
+  MenuItem,
+  MenuRoot,
+  MenuTrigger,
+} from "./components/ui/menu"
+import { Stack } from "@chakra-ui/react"
 
 function App() {
+
   return (
-    <>
-      <Box minH={"100vh"}>
-      <NavBar /> {/*keeps Navbar at the top of every page */}
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/create" element={<CreatePage />} />
+    <Stack>
+      <Button size='sm'>
+        Test Button 1 Baby
+      </Button>
 
-        </Routes>
+      <Button size='sm'>
+        Test Button 1 Baby
+      </Button>
 
-      </Box>
-    </>
-  );
+      <Button size='sm'>
+        Test Button 1 Baby
+      </Button>
+
+      <MenuRoot>
+        <MenuTrigger />
+        <MenuContent>
+          <MenuItem value="..." />
+        </MenuContent>
+      </MenuRoot>
+
+    </Stack>
+
+
+  )
 }
 
 export default App
